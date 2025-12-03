@@ -11,7 +11,7 @@ const port = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:5173'],
+  origin: ['http://localhost:5173', "https://restaurant-project-5q8t.vercel.app"],
   credentials: true
 }));
 
@@ -33,26 +33,6 @@ const client = new MongoClient(uri, {
   },
 });
 
-// Store ID: skkit687ca6d95c320
-// Store Password (API/Secret Key): skkit687ca6d95c320@ssl
-
-// Merchant Panel URL: https://sandbox.sslcommerz.com/manage/ (Credential as you inputted in the time of registration)
-
-// Store name: testskkit28lf
-// Registered URL: www.sk kitchen.com
-// Session API to generate transaction: https://sandbox.sslcommerz.com/gwprocess/v3/api.php
-// Validation API: https://sandbox.sslcommerz.com/validator/api/validationserverAPI.php?wsdl
-// Validation API (Web Service) name: https://sandbox.sslcommerz.com/validator/api/validationserverAPI.php
-
-// You may check our plugins available for multiple carts and libraries: https://github.com/sslcommerz
-
-// Your information at our system
-// Merchant Id: skkit687ca6d6599dc
-// Merchant Name: SK Kitchen
-// Name: SK Kitchen
-// Mailing Address: Dhaka,
-// Email: shakilsabeer@gmail.com
-// Mobile: 01712428954
 
 // JWT middleware
 const verifyToken = (req, res, next) => {
