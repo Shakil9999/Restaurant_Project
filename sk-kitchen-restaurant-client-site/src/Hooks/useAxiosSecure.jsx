@@ -3,9 +3,9 @@ import { useNavigate } from "react-router-dom";
 import useAuth from "./useAuth";
 
 
-// http://localhost:5000/
+// https://restaurant-project-server-tau.vercel.app/
 const axiosSecure = axios.create({
-    baseURL: 'http://localhost:5000'
+    baseURL: 'https://restaurant-project-server-tau.vercel.app'
     
 });
 

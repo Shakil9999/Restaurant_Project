@@ -16,7 +16,7 @@ const ContactMessages = () => {
     }).then((result) => {
       if (result.isConfirmed) {
         axios
-          .delete(`http://localhost:5000/contact/${id}`)
+          .delete(`https://restaurant-project-server-tau.vercel.app/contact/${id}`)
           .then((res) => {
             if (res.data.deletedCount > 0) {
               Swal.fire("Deleted!", "Message has been deleted.", "success");

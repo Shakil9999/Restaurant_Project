@@ -106,7 +106,7 @@ export const router = createBrowserRouter([
       {
         path: 'updateItem/:id',
         element: <AdminRoutes><UpdateItem></UpdateItem></AdminRoutes>,
-        loader: ({params})=> fetch(`http://localhost:5000/menu/${params.id}`)
+        loader: ({params})=> fetch(`https://restaurant-project-server-tau.vercel.app/menu/${params.id}`)
       },
       {
         path: 'allUsers',

@@ -9,7 +9,7 @@ const useMessages = () => {
   } = useQuery({
     queryKey: ['contactMessages'],
     queryFn: async () => {
-      const res = await axios.get("http://localhost:5000/contact");
+      const res = await axios.get("https://restaurant-project-server-tau.vercel.app/contact");
       return res.data;
     }
   });

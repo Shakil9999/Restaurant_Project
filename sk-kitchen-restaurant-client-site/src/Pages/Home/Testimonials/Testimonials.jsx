@@ -17,7 +17,7 @@ import { TbNumber66Small } from "react-icons/tb";
 const Testimonials = () => {
   const [review, setReview] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/reviews")
+    fetch("https://restaurant-project-server-tau.vercel.app/reviews")
       .then((res) => res.json())
       .then((data) => {
         setReview(data);

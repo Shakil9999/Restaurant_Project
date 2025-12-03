@@ -25,7 +25,7 @@ const SSLPayment = () => {
 
    
   
-      const res = await axios.post("http://localhost:5000/create-ssl-payment", payment, {
+      const res = await axios.post("https://restaurant-project-server-tau.vercel.app/create-ssl-payment", payment, {
         
       });
 
